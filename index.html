@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet"  type="text/css" href="assets/css/style.css">
+
+  <title>Psychic Game</title>
+  
+  
+</head>
+
+
+<body>
+<div id="game">
+<header>
+<h1 class="text-center">Psychic Game</h1>
+</header>
+  
+
+<div class="container">
+<div class="panel panel-default">
+<div class="panel-heading">
+
+<div class="row"><div class="col-xs-5">
+<p class="p1">Guess the letter from A-Z </p>   or</div>  
+<div class="col-xs-5"><label for="Select"><p>Guess from the following Ranges of letter:</label>
+      <select class="form-control" id="Select" onChange="reset()">
+        <option> </option>
+        <option value="10">A-J</option>
+        <option value="15">A-O</option>
+        <option value="20">A-T</option>
+		<option value="26">A-Z</option>
+      </select></p></div>
+
+
+
+</div>
+
+
+</div>
+<div class="row">
+<div class="col-md-8">
+<p id="ComputerPick"><span class='lable'>Computer Pick: </span><span class='Output'>-</span></p>
+</div>
+</div>
+<div class="row">
+<div class="col-md-8">
+<p id="Wins"><span class='lable'>Wins: </span><span class='Output'>0</span></p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-8">
+<p id="Losses"><span class='lable'>Losses: </span><span class='Output'>0</span></p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-8">
+<p id="guessLeft"><span class='lable'>Guesses Left: </span><span class='Output'>9</span></p>
+</div>
+</div>
+<div class="row">
+<div class="col-md-8">
+<p id="guessedLetters"><span class='lable'>Your guesses so far: </span><span class='Output'>0</span></p>
+</div>
+</div>
+<div class="row">
+<div class="col-md-8">
+<p id="guessPercentage"><span class='lable'>Winnig Percentage : </span><span class='Output'>0%</span></p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-8">
+<button type="button" class="btn btn-primary btn-lg" onClick="RestartGame();">Restart Game</button>
+
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="assets/js/psychicGame.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+body{
+
+    background-image: url("../img/psychicBg.jpg")
+
+}
+
+header{
+    color: purple;
+    font-weight: bold;
+
+}
+h2{
+
+	color: #83878d;
+}
+
+.p1{
+
+	color: blue;
+}
+
+.row{
+
+	color: purple;
+}
+
+img{
+
+	display: block;
+    margin: auto;
+    width: 30%;
+  }
+  .row {
+	  
+	  Padding:20px !important;
+  }
+  .lable {font-weight:bold;}
+   .Output {font-weight:bold;color:red;}
